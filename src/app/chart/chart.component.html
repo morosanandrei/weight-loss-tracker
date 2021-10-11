@@ -1,0 +1,6 @@
+<p-chart type="line" [data]="weightData" *ngIf="weightData"></p-chart>
+<ng-container *ngIf="currentWeekDelta && totalWeightLoss">
+
+    <div>Current week weight loss: {{currentWeekDelta}} kg</div>
+    <div>Total weight loss: {{totalWeightLoss}} kg</div>
+</ng-container>
